@@ -83,6 +83,12 @@ $env:COMMIT_STYLE="Haiku"
    ```
 
    The hook will automatically run, rewriting your message.
+   To try another style, just set `COMMIT_STYLE`:
+
+    ```bash
+    export COMMIT_STYLE="Pirate"
+    git commit -m "add user profile page"
+    ```
 
 3. **Observe the output**:
 
@@ -98,27 +104,6 @@ $env:COMMIT_STYLE="Haiku"
    ```
 
 Your AI-enhanced message is now in the commit history.
-
----
-
-## Available Styles
-
-You can use any style that makes sense as plain text. Here are some examples:
-
-| Style         | Description                       | Example Prompt Text                                     |
-| ------------- | --------------------------------- | ------------------------------------------------------- |
-| `Shakespeare` | Old-English dramatic flair        | Rewrite this commit in Shakespearean style.             |
-| `Haiku`       | 5–7–5 syllable poetic form        | Rewrite this commit as a Haiku (5-7-5 syllables).       |
-| `Formal`      | Professional, business-like tone  | Rewrite this commit in a concise, formal business tone. |
-| `Casual`      | Friendly, conversational          | Rewrite this commit in a casual, conversational tone.   |
-| `Pirate`      | Yarr! Swashbuckling pirate jargon | Rewrite this commit in pirate speak.                    |
-
-To try another style, just set `COMMIT_STYLE`:
-
-```bash
-export COMMIT_STYLE="Pirate"
-git commit -m "add user profile page"
-```
 
 ---
 
@@ -155,6 +140,6 @@ Contributions, issues, and feature requests are welcome! Fork the repo and send 
 ## License
 
 MIT © \[Your Name]
-
+---
 
 Made with ❤️ by Sarita
