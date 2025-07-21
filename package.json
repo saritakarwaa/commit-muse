@@ -1,0 +1,19 @@
+{
+  "name": "commit-muse",
+  "version": "1.0.1",
+  "main": "index.js",
+  "bin": {
+    "commit-muse": "./bin/install.js"
+  },
+  "keywords": [
+    "git",
+    "hook",
+    "commit",
+    "gemini",
+    "style",
+    "cli"
+  ],
+  "author": "Sarita Karwa",
+  "license": "MIT",
+  "description": "Transform your Git commit messages into poetic or styled text using Gemini."
+}
