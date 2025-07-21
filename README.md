@@ -47,13 +47,23 @@ Before using, set your Gemini API key and optionally choose a style:
 | Variable         | Default       | Description                                           |
 | ---------------- | ------------- | ----------------------------------------------------- |
 | `GEMINI_API_KEY` | *(required)*  | Your Google Gemini API key                            |
-| `BARD_STYLE`     | `Shakespeare` | The writing style to apply (e.g., Shakespeare, Haiku) |
+| `COMMIT_STYLE`     | `Shakespeare` | The writing style to apply (e.g., Shakespeare, Haiku) |
 
 You can set these in your shell:
 
 ```bash
 export GEMINI_API_KEY="YOUR_API_KEY_HERE"
-export BARD_STYLE="Haiku"
+export COMMIT_STYLE="Haiku"
+```
+To persist these across sessions, add them to ~/.bashrc, ~/.zshrc, or ~/.bash_profile.
+```bash
+set GEMINI_API_KEY=your-api-key-here
+set COMMIT_STYLE=Haiku
+```
+To make it permanent, use System Environment Variables or setx.
+```bash
+$env:GEMINI_API_KEY="your-api-key-here"
+$env:COMMIT_STYLE="Haiku"
 ```
 
 ---
@@ -103,10 +113,10 @@ You can use any style that makes sense as plain text. Here are some examples:
 | `Casual`      | Friendly, conversational          | Rewrite this commit in a casual, conversational tone.   |
 | `Pirate`      | Yarr! Swashbuckling pirate jargon | Rewrite this commit in pirate speak.                    |
 
-To try another style, just set `BARD_STYLE`:
+To try another style, just set `COMMIT_STYLE`:
 
 ```bash
-export BARD_STYLE="Pirate"
+export COMMIT_STYLE="Pirate"
 git commit -m "add user profile page"
 ```
 
@@ -145,3 +155,6 @@ Contributions, issues, and feature requests are welcome! Fork the repo and send 
 ## License
 
 MIT © \[Your Name]
+
+
+Made with ❤️ by Sarita
