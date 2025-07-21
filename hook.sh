@@ -3,7 +3,7 @@
 # commit-msg hook entry point
 COMMIT_MSG_FILE=$1 #git passes the path to the commit message file as the first argument to the commit-msg hook
 ORIGINAL_MSG=$(cat "$COMMIT_MSG_FILE") #stores the original commit msg
-STYLE="${BARD_STYLE:-Shakespeare}"
+STYLE="${COMMIT_STYLE:-Shakespeare}"
 echo "Using style: $STYLE"
 
 # Check for Gemini API key
