@@ -113,7 +113,7 @@ Your AI-enhanced message is now in the commit history.
 * **Commit Hook (`hook.sh`)**:
 
   1. Reads your original commit message.
-  2. Sends a prompt (including `BARD_STYLE`) and the message to the Gemini API.
+  2. Sends a prompt (including `COMMIT_STYLE`) and the message to the Gemini API.
   3. Overwrites the commit message file with the AI’s single-sentence rewrite.
 
 ---
