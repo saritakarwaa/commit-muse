@@ -19,7 +19,7 @@ ENDPOINT="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-fla
 JSON_DATA=$(jq -n \
   --arg style "$STYLE" \
   --arg msg "$ORIGINAL_MSG" \
-  '{contents: [{parts: [{text: "Rewrite the following Git commit message in \($style) style: \($msg). Respond with exactly one short sentence, not a poem or multiple lines."}]}]}')
+  '{contents: [{parts: [{text: "Rephrase this git commit message in \($style) style using only the existing information. Keep it under 10 words. Original: \($msg). Respond ONLY with the rewritten message, no additional text."}]}]}')
 
 
 
