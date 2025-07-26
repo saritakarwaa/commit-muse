@@ -18,22 +18,23 @@
 
 ## Installation
 
-Install globally:
+Install the package:
 
 ```bash
-npm install -g commit-muse
+npm install commit-muse
 ```
 
-*or* install per-project as a dev dependency:
+Initialize Git (if not already initialized):
 
 ```bash
-npm install --save-dev commit-muse
+git init
 ```
 
-Then run the installer to register the Git hook:
+Set up the Git hook manually
 
 ```bash
-npx commit-muse
+cp ./node_modules/commit-muse/hook.sh .git/hooks/commit-msg
+chmod +x .git/hooks/commit-msg
 ```
 
 This copies `hook.sh` into `.git/hooks/commit-msg` and makes it executable.
